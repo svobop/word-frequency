@@ -16,7 +16,7 @@ namespace word_frequency
                     string line;
                     while ((line = sr.ReadLine()) != null)
                     {
-                        textLines = textLines + line;
+                        textLines = textLines + " " + line;
                     }
                 }
             }
