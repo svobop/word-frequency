@@ -41,7 +41,7 @@ namespace word_frequency
                         }
                     }
 
-                    if (count == 2)
+                    if (count == frequency)
                     {
                         sw.WriteLine(word);
                     }
@@ -51,7 +51,7 @@ namespace word_frequency
 
         static void Main(string[] args)
         {
-            getWordAtFrequency(2);
+            getWordAtFrequency(1);
         }
     }
 }
