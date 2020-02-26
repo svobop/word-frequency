@@ -28,6 +28,19 @@ namespace word_frequency
             var listWords = textLines.Split(" ");
             var uniqueWords = new HashSet<string>(listWords);
 
+            foreach (var word in uniqueWords)
+            {
+                int count = 0;
+                foreach (var inputWord in listWords)
+                {
+                    if (inputWord == word)
+                    {
+                        count++;
+                    }
+                }
+
+                Console.WriteLine(word + count.ToString());
+            }
         }
 
         static void Main(string[] args)
